@@ -20,8 +20,14 @@ int main(){
     }
     for(int i=0; i<linhas; i++){
         for(int j=0; j<colunas; j++){
-            printf("%d ", matriz[i][j]);
+            if(j<colunas-1){
+                printf("%d ", matriz[i][j]);
+            }
+            else{
+                printf("%d", matriz[i][j]);
+            }
         }
+        printf("\n");
     }
     for(int i=linhas; i>0; i--){
         free(matriz[i]);
