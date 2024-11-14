@@ -7,7 +7,7 @@ int main(){
     scanf("%d %d", &linhas, &colunas);
     matriz = (int**) malloc (linhas*sizeof(int));
     if(linhas==0 || colunas==0){
-        printf("[matriz vazia");
+        printf("[matriz vazia]");
         return 0;
     }
     for(int i=0; i<linhas; i++){
